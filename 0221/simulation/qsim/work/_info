@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/0742019/simulation/qsim
+vhard_block
+Z1 !s110 1555493320
+!i10b 1
+!s100 BJR65j@hIJB@eRPkM<`DT2
+I>n;g_1i?9V0fA_5d[m]>92
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1555493317
+Z4 8test.vo
+Z5 Ftest.vo
+L0 139
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1555493319.000000
+Z8 !s107 test.vo|
+Z9 !s90 -work|work|test.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vtest
+R1
+!i10b 1
+!s100 ?W=:nZ0J9g[A<T3A3HF[o2
+ISL1V:YkOF@7:ejI9ko>9@1
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vtest_vlg_vec_tst
+!s110 1555493321
+!i10b 1
+!s100 S@T`@[UYG?TMg3B2J=IOF2
+I[hAjZ@fLe?LP`:ofg[V:U2
+R2
+R0
+w1555493314
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+!s108 1555493320.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

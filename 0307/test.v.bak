@@ -1,0 +1,7 @@
+module test (a,b,key_in,led_out);
+input a;
+input b;
+input key_in;
+output led_out;
+assign led_out=(keyin==o) ?a:b;
+endmodule

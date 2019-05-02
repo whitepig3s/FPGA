@@ -1,0 +1,5 @@
+|ex2
+key => led_red.DATAIN
+led_red <= key.DB_MAX_OUTPUT_PORT_TYPE
+
+

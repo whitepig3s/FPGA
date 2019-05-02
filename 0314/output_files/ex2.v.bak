@@ -1,0 +1,7 @@
+module ex2 (key,led_red )
+
+input sw;
+output led_red;
+assign led_red =(sw == 1)?1'b1:1'b0; 
+
+endmodule
