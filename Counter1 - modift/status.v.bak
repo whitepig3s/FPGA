@@ -1,0 +1,7 @@
+module status (input	clk, in, reset,
+	output reg [7:0] LEDG,
+	output reg [2:0]state);
+
+
+
+end module

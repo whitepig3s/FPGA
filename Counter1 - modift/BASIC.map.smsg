@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at LED_state.v(22): always construct contains both blocking and non-blocking assignments File: H:/Counter1 - modift/LED_state.v Line: 22
