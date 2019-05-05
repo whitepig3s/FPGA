@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/white/Desktop/FPGA/0411/simulation/qsim
+vhard_block
+Z1 !s110 1557018629
+!i10b 1
+!s100 n[KMXadf?<Mzg_6HVmRAU3
+I@3jSl4897[X^;kWOn6OYO2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1557018628
+Z4 80411.vo
+Z5 F0411.vo
+L0 1407
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1557018629.000000
+Z8 !s107 0411.vo|
+Z9 !s90 -work|work|0411.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vrun
+R1
+!i10b 1
+!s100 0?@VL`6mQVFf;9@34bcFR0
+I@PSdSEmI:_>Ll@3M5OYkn0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vrun_vlg_vec_tst
+R1
+!i10b 1
+!s100 8GYnfJc^3J6eVjZ1`AX7K0
+Ibmg5Onc:;l]zh=d;IBIOV1
+R2
+R0
+w1557018627
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

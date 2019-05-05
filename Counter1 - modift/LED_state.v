@@ -26,15 +26,15 @@ module LED_state
 	else
 		case (state)
 			S0:
-				LEDG = 8'b11111111;
+				LEDG = 8'hFF;
 			S1:
 				LEDG = {clk,clk,clk,~clk,~clk,~clk,clk,clk};
 			S2:
-				LEDG = 8'b00000000;
+				LEDG = 8'h0;
 			S3:
 				LEDG = {clk,~clk,clk,~clk,clk,~clk,clk,~clk};				
 			default:
-				LEDG = 8'b11111111;
+				LEDG = 8'hFF;
 		endcase
 	end
 

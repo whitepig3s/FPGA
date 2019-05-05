@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BASIC
-Thu May 02 20:52:35 2019
+Sun May 05 09:36:40 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -50,16 +50,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 02 20:52:35 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 05 09:36:40 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; BASIC                                       ;
 ; Top-level Entity Name              ; BASIC                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 38                                          ;
-;     Total combinational functions  ; 38                                          ;
-;     Dedicated logic registers      ; 26                                          ;
-; Total registers                    ; 26                                          ;
-; Total pins                         ; 46                                          ;
+; Total logic elements               ; 56                                          ;
+;     Total combinational functions  ; 56                                          ;
+;     Dedicated logic registers      ; 28                                          ;
+; Total registers                    ; 28                                          ;
+; Total pins                         ; 47                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -158,28 +158,28 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path     ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------+---------+
-; SEG7_LUT.v                       ; yes             ; User Verilog HDL File        ; H:/Counter1 - modift/SEG7_LUT.v  ;         ;
-; LED_state.v                      ; yes             ; User Verilog HDL File        ; H:/Counter1 - modift/LED_state.v ;         ;
-; status.v                         ; yes             ; User Verilog HDL File        ; H:/Counter1 - modift/status.v    ;         ;
-; basic.v                          ; yes             ; Auto-Found Verilog HDL File  ; H:/Counter1 - modift/basic.v     ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
+; SEG7_LUT.v                       ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modift/SEG7_LUT.v  ;         ;
+; LED_state.v                      ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v ;         ;
+; status.v                         ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v    ;         ;
+; basic.v                          ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v     ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -187,30 +187,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 38             ;
+; Estimated Total logic elements              ; 56             ;
 ;                                             ;                ;
-; Total combinational functions               ; 38             ;
+; Total combinational functions               ; 56             ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 0              ;
-;     -- 3 input functions                    ; 11             ;
-;     -- <=2 input functions                  ; 27             ;
+;     -- 4 input functions                    ; 8              ;
+;     -- 3 input functions                    ; 10             ;
+;     -- <=2 input functions                  ; 38             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 16             ;
-;     -- arithmetic mode                      ; 22             ;
+;     -- normal mode                          ; 32             ;
+;     -- arithmetic mode                      ; 24             ;
 ;                                             ;                ;
-; Total registers                             ; 26             ;
-;     -- Dedicated logic registers            ; 26             ;
+; Total registers                             ; 28             ;
+;     -- Dedicated logic registers            ; 28             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 46             ;
+; I/O pins                                    ; 47             ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 24             ;
-; Total fan-out                               ; 199            ;
-; Average fan-out                             ; 1.28           ;
+; Maximum fan-out                             ; 26             ;
+; Total fan-out                               ; 257            ;
+; Average fan-out                             ; 1.44           ;
 +---------------------------------------------+----------------+
 
 
@@ -219,7 +219,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
-; |BASIC                     ; 38 (24)             ; 26 (24)                   ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |BASIC                ; BASIC       ; work         ;
+; |BASIC                     ; 56 (42)             ; 28 (26)                   ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |BASIC                ; BASIC       ; work         ;
 ;    |LED_state:LED1|        ; 11 (11)             ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BASIC|LED_state:LED1 ; LED_state   ; work         ;
 ;    |SEG7_LUT:seg0|         ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BASIC|SEG7_LUT:seg0  ; SEG7_LUT    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
@@ -251,8 +251,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
 ; LED_state:LED1|state[2]               ; Stuck at GND due to stuck port data_in ;
-; counter_inc[24..27]                   ; Lost fanout                            ;
-; Total Number of Removed Registers = 5 ;                                        ;
+; Total Number of Removed Registers = 1 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -261,7 +260,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
+; Total registers                              ; 28    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 2     ;
@@ -343,22 +342,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 46                          ;
-; cycloneiii_ff         ; 26                          ;
+; boundary_port         ; 47                          ;
+; cycloneiii_ff         ; 28                          ;
 ;     CLR               ; 2                           ;
-;     plain             ; 24                          ;
-; cycloneiii_lcell_comb ; 41                          ;
-;     arith             ; 22                          ;
-;         2 data inputs ; 21                          ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 19                          ;
+;     plain             ; 26                          ;
+; cycloneiii_lcell_comb ; 59                          ;
+;     arith             ; 24                          ;
+;         2 data inputs ; 24                          ;
+;     normal            ; 35                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 4                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 13                          ;
 ;         3 data inputs ; 10                          ;
+;         4 data inputs ; 8                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.20                        ;
-; Average LUT depth     ; 2.09                        ;
+; Max LUT depth         ; 4.30                        ;
+; Average LUT depth     ; 2.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -367,7 +366,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -377,95 +376,95 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu May 02 20:52:19 2019
+    Info: Processing started: Sun May 05 09:36:27 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BASIC -c BASIC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file seg7_lut.v
-    Info (12023): Found entity 1: SEG7_LUT File: H:/Counter1 - modift/SEG7_LUT.v Line: 1
+    Info (12023): Found entity 1: SEG7_LUT File: C:/Users/white/Desktop/FPGA/Counter1 - modift/SEG7_LUT.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file led_state.v
-    Info (12023): Found entity 1: LED_state File: H:/Counter1 - modift/LED_state.v Line: 8
+    Info (12023): Found entity 1: LED_state File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file status.v
-    Info (12023): Found entity 1: status File: H:/Counter1 - modift/status.v Line: 1
+    Info (12023): Found entity 1: status File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 1
 Warning (12125): Using design file basic.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: BASIC File: H:/Counter1 - modift/basic.v Line: 1
+    Info (12023): Found entity 1: BASIC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 1
 Info (12127): Elaborating entity "BASIC" for the top level hierarchy
-Info (12128): Elaborating entity "LED_state" for hierarchy "LED_state:LED1" File: H:/Counter1 - modift/basic.v Line: 24
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(24): variable "value" is read inside the Always Construct but isn't in the Always Construct's Event Control File: H:/Counter1 - modift/LED_state.v Line: 24
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(25): variable "LEDG" is read inside the Always Construct but isn't in the Always Construct's Event Control File: H:/Counter1 - modift/LED_state.v Line: 25
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(31): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: H:/Counter1 - modift/LED_state.v Line: 31
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(35): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: H:/Counter1 - modift/LED_state.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at LED_state.v(23): inferring latch(es) for variable "LEDG", which holds its previous value in one or more paths through the always construct File: H:/Counter1 - modift/LED_state.v Line: 23
-Warning (10230): Verilog HDL assignment warning at LED_state.v(44): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 44
-Warning (10230): Verilog HDL assignment warning at LED_state.v(49): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 49
-Warning (10230): Verilog HDL assignment warning at LED_state.v(51): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 51
-Warning (10230): Verilog HDL assignment warning at LED_state.v(54): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 54
-Warning (10230): Verilog HDL assignment warning at LED_state.v(56): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 56
-Warning (10230): Verilog HDL assignment warning at LED_state.v(59): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 59
-Warning (10230): Verilog HDL assignment warning at LED_state.v(61): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 61
-Warning (10230): Verilog HDL assignment warning at LED_state.v(64): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 64
-Warning (10230): Verilog HDL assignment warning at LED_state.v(66): truncated value with size 32 to match size of target (3) File: H:/Counter1 - modift/LED_state.v Line: 66
-Warning (10240): Verilog HDL Always Construct warning at LED_state.v(70): inferring latch(es) for variable "value", which holds its previous value in one or more paths through the always construct File: H:/Counter1 - modift/LED_state.v Line: 70
-Info (10041): Inferred latch for "value[0]" at LED_state.v(73) File: H:/Counter1 - modift/LED_state.v Line: 73
-Info (10041): Inferred latch for "LEDG[0]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[1]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[2]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[3]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[4]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[5]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[6]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[7]" at LED_state.v(27) File: H:/Counter1 - modift/LED_state.v Line: 27
-Info (12128): Elaborating entity "status" for hierarchy "status:LED" File: H:/Counter1 - modift/basic.v Line: 25
-Warning (10235): Verilog HDL Always Construct warning at status.v(12): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: H:/Counter1 - modift/status.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at status.v(16): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: H:/Counter1 - modift/status.v Line: 16
-Warning (10030): Net "state" at status.v(4) has no driver or initial value, using a default initial value '0' File: H:/Counter1 - modift/status.v Line: 4
-Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT:seg0" File: H:/Counter1 - modift/basic.v Line: 26
+Warning (10230): Verilog HDL assignment warning at basic.v(33): truncated value with size 32 to match size of target (25) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 33
+Info (12128): Elaborating entity "LED_state" for hierarchy "LED_state:LED1" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 37
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(24): variable "value" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 24
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(25): variable "LEDG" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 25
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(31): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 31
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(35): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at LED_state.v(23): inferring latch(es) for variable "LEDG", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 23
+Warning (10230): Verilog HDL assignment warning at LED_state.v(44): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 44
+Warning (10230): Verilog HDL assignment warning at LED_state.v(49): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 49
+Warning (10230): Verilog HDL assignment warning at LED_state.v(51): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 51
+Warning (10230): Verilog HDL assignment warning at LED_state.v(54): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 54
+Warning (10230): Verilog HDL assignment warning at LED_state.v(56): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 56
+Warning (10230): Verilog HDL assignment warning at LED_state.v(59): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 59
+Warning (10230): Verilog HDL assignment warning at LED_state.v(61): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 61
+Warning (10230): Verilog HDL assignment warning at LED_state.v(64): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 64
+Warning (10230): Verilog HDL assignment warning at LED_state.v(66): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 66
+Warning (10240): Verilog HDL Always Construct warning at LED_state.v(70): inferring latch(es) for variable "value", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 70
+Info (10041): Inferred latch for "value[0]" at LED_state.v(73) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 73
+Info (10041): Inferred latch for "LEDG[0]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[1]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[2]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[3]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[4]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[5]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[6]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (10041): Inferred latch for "LEDG[7]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+Info (12128): Elaborating entity "status" for hierarchy "status:LED" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 38
+Warning (10235): Verilog HDL Always Construct warning at status.v(12): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 12
+Warning (10235): Verilog HDL Always Construct warning at status.v(16): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 16
+Warning (10030): Net "state" at status.v(4) has no driver or initial value, using a default initial value '0' File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 4
+Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT:seg0" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 39
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[6]" merged with LATCH primitive "LED_state:LED1|LEDG[0]" File: H:/Counter1 - modift/LED_state.v Line: 27
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[7]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: H:/Counter1 - modift/LED_state.v Line: 27
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[5]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: H:/Counter1 - modift/LED_state.v Line: 27
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[4]" merged with LATCH primitive "LED_state:LED1|LEDG[2]" File: H:/Counter1 - modift/LED_state.v Line: 27
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[6]" merged with LATCH primitive "LED_state:LED1|LEDG[0]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[7]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[5]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[4]" merged with LATCH primitive "LED_state:LED1|LEDG[2]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 11
-    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[1]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[2]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[4]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[5]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[6]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[7]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[8]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[10]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[11]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[12]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[13]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[14]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[15]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[16]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[17]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: H:/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: H:/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 12
+    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[1]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[2]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[4]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[5]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[6]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[7]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[8]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[10]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[11]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[12]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[13]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[14]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[15]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[16]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "LEDR[17]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 103 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 41 output pins
-    Info (21061): Implemented 38 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Thu May 02 20:52:35 2019
-    Info: Elapsed time: 00:00:16
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 56 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Sun May 05 09:36:40 2019
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:27
 
 

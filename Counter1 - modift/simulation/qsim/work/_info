@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/white/Desktop/FPGA/Counter1 - modift/simulation/qsim
+vBASIC
+Z1 !s110 1557018520
+!i10b 1
+!s100 JTf@f?;0DS7LUT;_B2`h60
+IS8l]VS]BNNfUV2SfT]Z=o3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1557018519
+Z4 8BASIC.vo
+Z5 FBASIC.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1557018520.000000
+Z8 !s107 BASIC.vo|
+Z9 !s90 -work|work|BASIC.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@b@a@s@i@c
+vBASIC_vlg_vec_tst
+R1
+!i10b 1
+!s100 kVTNEO[91GH<TnmGDM_ba1
+IjPK_k1FzYobShdEZ;IOGR3
+R2
+R0
+w1557018518
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@b@a@s@i@c_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 fJhljdljEWmAdNV<c2G1d3
+IX0VCUnLLLUB@iNo[BMLc61
+R2
+R0
+R3
+R4
+R5
+L0 2088
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
