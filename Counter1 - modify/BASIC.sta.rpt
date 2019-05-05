@@ -1,5 +1,5 @@
 Timing Analyzer report for BASIC
-Sun May 05 09:36:59 2019
+Sun May 05 09:51:41 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -104,7 +104,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
+;     Processor 2            ;   0.9%      ;
 +----------------------------+-------------+
 
 
@@ -113,7 +113,7 @@ refer to the applicable agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; BASIC.sdc     ; OK     ; Sun May 05 09:36:58 2019 ;
+; BASIC.sdc     ; OK     ; Sun May 05 09:51:40 2019 ;
 +---------------+--------+--------------------------+
 
 
@@ -1304,7 +1304,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 05 09:36:57 2019
+    Info: Processing started: Sun May 05 09:51:38 2019
 Info: Command: quartus_sta BASIC -c BASIC
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1313,12 +1313,12 @@ Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Warning (335093): The Timing Analyzer is analyzing 5 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'BASIC.sdc'
-Warning (332174): Ignored filter at BASIC.sdc(10): CLOCK2_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 10
-Warning (332049): Ignored create_clock at BASIC.sdc(10): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 10
-    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 10
-Warning (332174): Ignored filter at BASIC.sdc(11): CLOCK3_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 11
-Warning (332049): Ignored create_clock at BASIC.sdc(11): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 11
-    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 11
+Warning (332174): Ignored filter at BASIC.sdc(10): CLOCK2_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 10
+Warning (332049): Ignored create_clock at BASIC.sdc(10): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 10
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 10
+Warning (332174): Ignored filter at BASIC.sdc(11): CLOCK3_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 11
+Warning (332049): Ignored create_clock at BASIC.sdc(11): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 11
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 11
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Warning (332060): Node: clkout~reg0 was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register LED_state:LED1|state[0] is being clocked by clkout~reg0
@@ -1390,8 +1390,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Sun May 05 09:36:59 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Sun May 05 09:51:41 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

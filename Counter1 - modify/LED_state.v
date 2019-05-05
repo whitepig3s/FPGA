@@ -10,6 +10,7 @@ module LED_state
 	input	clk, in, reset,start,pause,
 	output reg [7:0] LEDG,
 	output reg [2:0]state
+	
 );
 
 	// Declare state register
@@ -32,7 +33,11 @@ module LED_state
 			S2:
 				LEDG = 8'h0;
 			S3:
-				LEDG = {clk,~clk,clk,~clk,clk,~clk,clk,~clk};				
+				LEDG = {clk,~clk,clk,~clk,clk,~clk,clk,~clk};	
+			S4:
+				LEDG=	;
+			S5:
+				LEDG= ;
 			default:
 				LEDG = 8'hFF;
 		endcase
@@ -61,9 +66,19 @@ module LED_state
 						state <= S2;
 				S3:
 					if (in)			//S3?S0
-						state <= S0;
+						state <= S4;
 					else
 						state <= S3;
+				S4:
+					if (in)			
+						state <= S5;
+					else
+						state <= S4;
+				S5:
+					if (in)			
+						state <= S0;
+					else
+						state <= S5;
 			endcase
 	end
 	

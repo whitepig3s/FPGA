@@ -1,5 +1,5 @@
 Fitter report for BASIC
-Sun May 05 09:36:51 2019
+Sun May 05 09:51:26 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun May 05 09:36:51 2019       ;
+; Fitter Status                      ; Successful - Sun May 05 09:51:26 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; BASIC                                       ;
 ; Top-level Entity Name              ; BASIC                                       ;
@@ -159,7 +159,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -201,7 +201,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.pin.
+The pin-out file can be found in C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1693,12 +1693,12 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Critical Warning (169085): No exact pin location assignment(s) for 1 pins of 47 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Warning (335093): The Timing Analyzer is analyzing 5 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'BASIC.sdc'
-Warning (332174): Ignored filter at BASIC.sdc(10): CLOCK2_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 10
-Warning (332049): Ignored create_clock at BASIC.sdc(10): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 10
-    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 10
-Warning (332174): Ignored filter at BASIC.sdc(11): CLOCK3_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 11
-Warning (332049): Ignored create_clock at BASIC.sdc(11): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 11
-    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.sdc Line: 11
+Warning (332174): Ignored filter at BASIC.sdc(10): CLOCK2_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 10
+Warning (332049): Ignored create_clock at BASIC.sdc(10): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 10
+    Info (332050): create_clock -period 20 [get_ports CLOCK2_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 10
+Warning (332174): Ignored filter at BASIC.sdc(11): CLOCK3_50 could not be matched with a port File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 11
+Warning (332049): Ignored create_clock at BASIC.sdc(11): Argument <targets> is an empty collection File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 11
+    Info (332050): create_clock -period 20 [get_ports CLOCK3_50] File: C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.sdc Line: 11
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Warning (332060): Node: clkout~reg0 was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Register LED_state:LED1|state[0] is being clocked by clkout~reg0
@@ -1710,23 +1710,23 @@ Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):   20.000     CLOCK_50
-Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 10
+Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN Y2 (CLK2, DIFFCLK_1p)) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 10
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node clkout~reg0 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 26
-Info (176353): Automatically promoted node LED_state:LED1|value[0]  File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 73
+        Info (176357): Destination node clkout~reg0 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 26
+Info (176353): Automatically promoted node LED_state:LED1|value[0]  File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 74
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node LED_state:LED1|value[0] File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 73
-Info (176353): Automatically promoted node clkout~reg0  File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 26
+        Info (176357): Destination node LED_state:LED1|value[0] File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 74
+Info (176353): Automatically promoted node clkout~reg0  File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 26
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node LED_state:LED1|Mux1~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-        Info (176357): Destination node LED_state:LED1|Mux0~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-        Info (176357): Destination node LED_state:LED1|Mux2~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-        Info (176357): Destination node LED_state:LED1|Mux3~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-        Info (176357): Destination node clkout~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 15
-        Info (176357): Destination node clkout~output File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 15
+        Info (176357): Destination node LED_state:LED1|Mux1~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+        Info (176357): Destination node LED_state:LED1|Mux0~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+        Info (176357): Destination node LED_state:LED1|Mux2~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+        Info (176357): Destination node LED_state:LED1|Mux3~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+        Info (176357): Destination node clkout~0 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 15
+        Info (176357): Destination node clkout~output File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 15
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1743,7 +1743,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has 2.5V VCCIO pins. 9 total pin(s) used --  49 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 30 total pin(s) used --  42 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  71 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1756,26 +1756,26 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 10
-Info (144001): Generated suppressed messages file C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.fit.smsg
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at Y2 File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 10
+Info (144001): Generated suppressed messages file C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 5437 megabytes
-    Info: Processing ended: Sun May 05 09:36:52 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Processing ended: Sun May 05 09:51:27 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/white/Desktop/FPGA/Counter1 - modift/BASIC.fit.smsg.
+The suppressed messages can be found in C:/Users/white/Desktop/FPGA/Counter1 - modify/BASIC.fit.smsg.
 
 

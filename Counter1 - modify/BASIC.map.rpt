@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BASIC
-Sun May 05 09:36:40 2019
+Sun May 05 09:51:09 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 05 09:36:40 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 05 09:51:09 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; BASIC                                       ;
 ; Top-level Entity Name              ; BASIC                                       ;
@@ -175,10 +175,10 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                              ; Library ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
-; SEG7_LUT.v                       ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modift/SEG7_LUT.v  ;         ;
-; LED_state.v                      ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v ;         ;
-; status.v                         ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v    ;         ;
-; basic.v                          ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v     ;         ;
+; SEG7_LUT.v                       ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modify/SEG7_LUT.v  ;         ;
+; LED_state.v                      ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v ;         ;
+; status.v                         ; yes             ; User Verilog HDL File        ; C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v    ;         ;
+; basic.v                          ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v     ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
 
 
@@ -376,84 +376,107 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 05 09:36:27 2019
+    Info: Processing started: Sun May 05 09:50:54 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BASIC -c BASIC
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file seg7_lut.v
-    Info (12023): Found entity 1: SEG7_LUT File: C:/Users/white/Desktop/FPGA/Counter1 - modift/SEG7_LUT.v Line: 1
+    Info (12023): Found entity 1: SEG7_LUT File: C:/Users/white/Desktop/FPGA/Counter1 - modify/SEG7_LUT.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file led_state.v
-    Info (12023): Found entity 1: LED_state File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 8
+    Info (12023): Found entity 1: LED_state File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file status.v
-    Info (12023): Found entity 1: status File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 1
+    Info (12023): Found entity 1: status File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 1
 Warning (12125): Using design file basic.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: BASIC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 1
+    Info (12023): Found entity 1: BASIC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 1
 Info (12127): Elaborating entity "BASIC" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at basic.v(33): truncated value with size 32 to match size of target (25) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 33
-Info (12128): Elaborating entity "LED_state" for hierarchy "LED_state:LED1" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 37
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(24): variable "value" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 24
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(25): variable "LEDG" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 25
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(31): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 31
-Warning (10235): Verilog HDL Always Construct warning at LED_state.v(35): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at LED_state.v(23): inferring latch(es) for variable "LEDG", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 23
-Warning (10230): Verilog HDL assignment warning at LED_state.v(44): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 44
-Warning (10230): Verilog HDL assignment warning at LED_state.v(49): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 49
-Warning (10230): Verilog HDL assignment warning at LED_state.v(51): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 51
-Warning (10230): Verilog HDL assignment warning at LED_state.v(54): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 54
-Warning (10230): Verilog HDL assignment warning at LED_state.v(56): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 56
-Warning (10230): Verilog HDL assignment warning at LED_state.v(59): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 59
-Warning (10230): Verilog HDL assignment warning at LED_state.v(61): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 61
-Warning (10230): Verilog HDL assignment warning at LED_state.v(64): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 64
-Warning (10230): Verilog HDL assignment warning at LED_state.v(66): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 66
-Warning (10240): Verilog HDL Always Construct warning at LED_state.v(70): inferring latch(es) for variable "value", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 70
-Info (10041): Inferred latch for "value[0]" at LED_state.v(73) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 73
-Info (10041): Inferred latch for "LEDG[0]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[1]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[2]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[3]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[4]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[5]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[6]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (10041): Inferred latch for "LEDG[7]" at LED_state.v(27) File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-Info (12128): Elaborating entity "status" for hierarchy "status:LED" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 38
-Warning (10235): Verilog HDL Always Construct warning at status.v(12): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at status.v(16): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 16
-Warning (10030): Net "state" at status.v(4) has no driver or initial value, using a default initial value '0' File: C:/Users/white/Desktop/FPGA/Counter1 - modift/status.v Line: 4
-Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT:seg0" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 39
+Warning (10230): Verilog HDL assignment warning at basic.v(33): truncated value with size 32 to match size of target (25) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 33
+Info (12128): Elaborating entity "LED_state" for hierarchy "LED_state:LED1" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 37
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(25): variable "value" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 25
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(26): variable "LEDG" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 26
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(32): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 32
+Warning (10235): Verilog HDL Always Construct warning at LED_state.v(36): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 36
+Warning (10240): Verilog HDL Always Construct warning at LED_state.v(24): inferring latch(es) for variable "LEDG", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 24
+Warning (10230): Verilog HDL assignment warning at LED_state.v(45): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 45
+Warning (10230): Verilog HDL assignment warning at LED_state.v(50): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 50
+Warning (10230): Verilog HDL assignment warning at LED_state.v(52): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 52
+Warning (10230): Verilog HDL assignment warning at LED_state.v(55): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 55
+Warning (10230): Verilog HDL assignment warning at LED_state.v(57): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 57
+Warning (10230): Verilog HDL assignment warning at LED_state.v(60): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 60
+Warning (10230): Verilog HDL assignment warning at LED_state.v(62): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 62
+Warning (10230): Verilog HDL assignment warning at LED_state.v(65): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 65
+Warning (10230): Verilog HDL assignment warning at LED_state.v(67): truncated value with size 32 to match size of target (3) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 67
+Warning (10240): Verilog HDL Always Construct warning at LED_state.v(71): inferring latch(es) for variable "value", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 71
+Info (10041): Inferred latch for "value[0]" at LED_state.v(74) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 74
+Info (10041): Inferred latch for "LEDG[0]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[1]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[2]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[3]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[4]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[5]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[6]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (10041): Inferred latch for "LEDG[7]" at LED_state.v(28) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+Info (12128): Elaborating entity "status" for hierarchy "status:LED" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 38
+Warning (10235): Verilog HDL Always Construct warning at status.v(10): variable "value" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 10
+Warning (10235): Verilog HDL Always Construct warning at status.v(11): variable "LEDR" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 11
+Warning (10235): Verilog HDL Always Construct warning at status.v(17): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 17
+Warning (10235): Verilog HDL Always Construct warning at status.v(21): variable "clk" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at status.v(9): inferring latch(es) for variable "LEDR", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 9
+Warning (10240): Verilog HDL Always Construct warning at status.v(27): inferring latch(es) for variable "value", which holds its previous value in one or more paths through the always construct File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 27
+Warning (10030): Net "state" at status.v(4) has no driver or initial value, using a default initial value '0' File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 4
+Info (10041): Inferred latch for "value[0]" at status.v(30) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 30
+Info (10041): Inferred latch for "LEDR[0]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[1]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[2]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[3]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[4]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[5]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[6]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[7]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[8]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[9]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[10]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[11]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[12]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[13]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[14]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[15]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[16]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (10041): Inferred latch for "LEDR[17]" at status.v(13) File: C:/Users/white/Desktop/FPGA/Counter1 - modify/status.v Line: 13
+Info (12128): Elaborating entity "SEG7_LUT" for hierarchy "SEG7_LUT:seg0" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 39
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[6]" merged with LATCH primitive "LED_state:LED1|LEDG[0]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[7]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[5]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
-    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[4]" merged with LATCH primitive "LED_state:LED1|LEDG[2]" File: C:/Users/white/Desktop/FPGA/Counter1 - modift/LED_state.v Line: 27
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[6]" merged with LATCH primitive "LED_state:LED1|LEDG[0]" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[7]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[5]" merged with LATCH primitive "LED_state:LED1|LEDG[1]" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
+    Info (13026): Duplicate LATCH primitive "LED_state:LED1|LEDG[4]" merged with LATCH primitive "LED_state:LED1|LEDG[2]" File: C:/Users/white/Desktop/FPGA/Counter1 - modify/LED_state.v Line: 28
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 12
-    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[1]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[2]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[4]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[5]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[6]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[7]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[8]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[10]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[11]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[12]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[13]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[14]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[15]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[16]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "LEDR[17]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 13
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modift/basic.v Line: 14
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 12
+    Warning (13410): Pin "LEDR[0]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[1]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[2]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[4]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[5]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[6]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[7]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[8]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[9]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[10]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[11]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[12]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[13]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[14]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[15]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[16]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "LEDR[17]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 13
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/white/Desktop/FPGA/Counter1 - modify/basic.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -461,10 +484,10 @@ Info (21057): Implemented 103 device resources after synthesis - the final resou
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 42 output pins
     Info (21061): Implemented 56 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
     Info: Peak virtual memory: 4766 megabytes
-    Info: Processing ended: Sun May 05 09:36:40 2019
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Processing ended: Sun May 05 09:51:09 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:30
 
 
