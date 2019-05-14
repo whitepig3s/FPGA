@@ -17,12 +17,14 @@ reg [3:0] second; //秒數
 reg [1:0] state; //儲存燈號
 parameter S0 = 0, S1 = 1, S2 = 2;
 
-//50MHz to 1Hz ---
+
 initial begin
     counter = 0;
     clkout = 0;
+	 state = 0;
 end
 
+//50MHz to 1Hz ---
 always @(posedge CLOCK_50)
 begin    
 	if (counter == 0) begin
@@ -69,5 +71,6 @@ begin
 end
 
 SEG7_LUT seg0(.oSEG(HEX0),.iDIG(second));
+LED_state GR(.clk(clkout),.state(state),.LEDR(LEDR),.LEDG(LEDG));
 
 endmodule

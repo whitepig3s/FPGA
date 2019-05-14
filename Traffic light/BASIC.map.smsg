@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at BASIC.v(39): always construct contains both blocking and non-blocking assignments File: C:/Users/white/Desktop/FPGA/Traffic light/BASIC.v Line: 39
+Warning (10268): Verilog HDL information at BASIC.v(41): always construct contains both blocking and non-blocking assignments File: C:/Users/white/Desktop/FPGA/Traffic light/BASIC.v Line: 41
