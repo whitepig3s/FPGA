@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/Users/NIUECE5F/Desktop/fpga-week6/Counter1/") File("BASIC.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Users/white/Desktop/FPGA/Traffic light/") File("BASIC.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

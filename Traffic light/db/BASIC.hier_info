@@ -25,17 +25,17 @@ CLOCK_50 => counter[21].CLK
 CLOCK_50 => counter[22].CLK
 CLOCK_50 => counter[23].CLK
 CLOCK_50 => counter[24].CLK
-LEDG[0] <= LED_state:GR.LEDG
-LEDR[0] <= LED_state:GR.LEDR
-LEDR[1] <= LED_state:GR.LEDR
-HEX0[0] <= SEG7_LUT:seg0.oSEG
-HEX0[1] <= SEG7_LUT:seg0.oSEG
-HEX0[2] <= SEG7_LUT:seg0.oSEG
-HEX0[3] <= SEG7_LUT:seg0.oSEG
-HEX0[4] <= SEG7_LUT:seg0.oSEG
-HEX0[5] <= SEG7_LUT:seg0.oSEG
-HEX0[6] <= SEG7_LUT:seg0.oSEG
-clkout <= clkout.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] << LED_state:GR.LEDG
+LEDR[0] << LED_state:GR.LEDR
+LEDR[1] << LED_state:GR.LEDR
+HEX0[0] << SEG7_LUT:seg0.oSEG
+HEX0[1] << SEG7_LUT:seg0.oSEG
+HEX0[2] << SEG7_LUT:seg0.oSEG
+HEX0[3] << SEG7_LUT:seg0.oSEG
+HEX0[4] << SEG7_LUT:seg0.oSEG
+HEX0[5] << SEG7_LUT:seg0.oSEG
+HEX0[6] << SEG7_LUT:seg0.oSEG
+clkout << clkout.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |light|SEG7_LUT:seg0
@@ -53,20 +53,21 @@ iDIG[3] => Decoder0.IN0
 
 
 |light|LED_state:GR
-clk => LEDR[0]~reg0.CLK
-clk => LEDR[1]~reg0.CLK
-clk => LEDG[0]~reg0.CLK
-state[0] => Mux0.IN5
-state[0] => Mux1.IN5
-state[0] => Mux2.IN5
-state[1] => Mux0.IN4
-state[1] => Mux1.IN4
-state[1] => Mux2.IN4
-state[2] => Mux0.IN3
-state[2] => Mux1.IN3
-state[2] => Mux2.IN3
-LEDG[0] <= LEDG[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[0] <= LEDR[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-LEDR[1] <= LEDR[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => ~NO_FANOUT~
+state[0] => Mux0.IN10
+state[0] => Mux1.IN10
+state[0] => Mux2.IN10
+state[0] => Mux3.IN10
+state[1] => Mux0.IN9
+state[1] => Mux1.IN9
+state[1] => Mux2.IN9
+state[1] => Mux3.IN9
+state[2] => Mux0.IN8
+state[2] => Mux1.IN8
+state[2] => Mux2.IN8
+state[2] => Mux3.IN8
+LEDG[0] <= LEDG[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[0] <= LEDR[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LEDR[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

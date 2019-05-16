@@ -42,7 +42,7 @@ always @(posedge clkout)
 begin 
 	case (state)
 		S0: //GREEN
-			if (second >0)
+			if (second >1)
 				second=second-1;
 			else
 				begin
@@ -51,7 +51,7 @@ begin
 				end
 				
 		S1: //YELLOW
-			if (second >0)
+			if (second >1)
 				second=second-1;				
 			else
 				begin
@@ -60,7 +60,7 @@ begin
 				end
 				
 		S2: //RED
-			if (second >0)
+			if (second >1)
 				second=second-1;
 			else
 				begin

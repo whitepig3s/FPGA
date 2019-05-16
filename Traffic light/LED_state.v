@@ -8,7 +8,7 @@ module LED_state
 
 parameter S0 = 0, S1 = 1, S2 = 2;
 
-always @(posedge clk)
+always @(state)
 begin 
 	case (state)
 		S0: //GREEN
